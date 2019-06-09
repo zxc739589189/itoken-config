@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: itoken-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/zxc739589189/itoken-config
+          search-paths: respo
+          username: 739589189@qq.com
+          password: wsy7336554
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.207.135:8761/eureka/
