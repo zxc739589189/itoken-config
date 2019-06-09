@@ -14,8 +14,8 @@ spring:
           search-paths: respo
           username: 739589189@qq.com
           password: wsy7336554
-   zipkin:
-     base-url: http://192.168.207.135:9411
+  zipkin:
+    base-url: http://192.168.207.135:9411
 
 server:
   port: 8888
