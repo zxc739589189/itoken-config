@@ -37,22 +37,22 @@
             <scope>test</scope>
         </dependency>
         <!-- Spring Boot End -->
-
-        <!-- Spring Cloud Begin -->
+        <!-- 添加被追踪服务-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
+        <!-- Spring Cloud Begin -->
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <!-- Spring Cloud End -->
 
-        <!-- 添加被追踪服务-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
         <!--服务监控客户端  被监控-->
