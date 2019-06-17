@@ -14,7 +14,9 @@ eureka:
   instance:
     hostname: localhost
   client:
-    registerWithEureka: false
+    #表示是否将自己注册到eureka中
+    registerWithEureka: true
+    #表示是否从eureka获取注册信息,如果是单一节点,不需要同步其他eureka节点,可以设置为false,此处是集群设置为true
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://192.168.207.135:8761/eureka/,http://192.168.207.135:8861/eureka/,http://192.168.207.135:8961/eureka/
